@@ -30,11 +30,22 @@ let firstname = "Yasmeen";
 // 2b. Parametrisierung + Datenübergabe von AUSSEN
 
 // Argumente sind Daten für Parameter
-ausgabeNamen2("Sohrab"); // call +Argument(e)
-ausgabeNamen2("Nico");
-ausgabeNamen2("Yasmeen");
+// ausgabeNamen2("Sohrab"); // call +Argument(e)
+// ausgabeNamen2("Nico");
+// ausgabeNamen2("Yasmeen");
 
 // Funktion mit Parameter(n)
 function ausgabeNamen2 (firstname) {
     console.log("Hallo " + firstname + "!");
+}
+
+/***** Funktionen 02c *****/
+// 2c. Mehrere Parameter / Argumente
+
+ausgabeNamenParams("Max", "Mütze")
+ausgabeNamenParams(prompt("Vorname?"), prompt("Name?"))
+
+function ausgabeNamenParams(firstName, familyName) {
+    // console.log("Hallo " + firstName + " " + familyName + "!"); 
+    console.log(`Hallo ${firstName} ${familyName}!`)
 }
